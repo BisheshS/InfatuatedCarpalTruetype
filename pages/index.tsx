@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         <div className="mb-8">
           <h2 className="text-lg font-semibold mb-2">about</h2>
           <p className="text-gray-700">
-            embark on a journey of self-discovery and growth<br></br>join our 30-day challenge designed to help you know yourself better and become independent of your vices.
+            embark on a journey of self-discovery and growth<br></br>join our 30-day challenge designed to help you know yourself better and become independent of your vices. First cohort was a great success, will update the stats here
           </p>
         </div>
 
@@ -62,8 +62,15 @@ const Home: NextPage = () => {
           <h2 className="text-lg font-semibold mb-2">program rules</h2>
           <ul className="list-disc list-inside text-gray-700">
             <li>no indulgence or vices for 30 days</li>
-            <li>work on daily goals like 100 pushups, writing a book, creating music, or running 3 miles</li>
+            <li>work on daily goals like 100 pushups, writing a book, creating music, running 3 miles or choose your own</li>
           </ul>
+        </div>
+
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-2">what to do</h3>
+          <p className="text-gray-700">
+            we will use <b> twitter </b> for posting daily updates and you will be given a personal google sheet for tracking your progress and milestones for your challenge
+          </p>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md">

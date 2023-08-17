@@ -29,7 +29,7 @@
 .custom-form h1,
 .custom-form h2 {
   color: #4a90e2;
-  font-family: 'Space Mono', monospace;
+  /* font-family: 'Space Mono', monospace; */
 }
 
 /* Style for the input fields */
@@ -59,7 +59,7 @@
   color: white;
   cursor: pointer;
   padding: 12px 20px;
-  font-family: 'Space Mono', monospace;
+  /* font-family: 'Space Mono', monospace; */
   transition: background-color 0.3s, transform 0.2s;
 }
 
