@@ -59,10 +59,10 @@ const Home: NextPage = () => {
         </div>
 
         <div className="mb-8">
-          <h2 className="text-lg font-semibold mb-2">Program Rules</h2>
+          <h2 className="text-lg font-semibold mb-2">program rules</h2>
           <ul className="list-disc list-inside text-gray-700">
-            <li>No indulgence or vices for 30 days</li>
-            <li>Work on daily goals like 100 pushups, writing a book, creating music, or running 3 miles</li>
+            <li>no indulgence or vices for 30 days</li>
+            <li>work on daily goals like 100 pushups, writing a book, creating music, or running 3 miles</li>
           </ul>
         </div>
 
@@ -70,45 +70,45 @@ const Home: NextPage = () => {
           <h2 className="text-lg font-semibold mb-4"></h2>
           <form id="registration-form" action="https://submit-form.com/81BG540J" className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-gray-700 mb-1">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 placeholder-gray-500" />
+              <label htmlFor="name" className="block text-gray-700 mb-1">name</label>
+              <input type="text" id="name" name="name" placeholder="your name" value={name} onChange={(e) => setName(e.target.value)} required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 " />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-gray-700 mb-1">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isEmailValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 placeholder-gray-500`} />
-              {!isEmailValid && <p className="text-red-500 text-sm">Please enter a valid email address.</p>}
+              <label htmlFor="email" className="block text-gray-700 mb-1">email</label>
+              <input type="email" id="email" name="email" placeholder="your email" value={email} onChange={(e) => setEmail(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isEmailValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 `} />
+              {!isEmailValid && <p className="text-red-500 text-sm">please enter a valid email address.</p>}
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-gray-700 mb-1">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isPhoneValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 placeholder-gray-500`} />
-              {!isPhoneValid && <p className="text-red-500 text-sm">Please enter a valid 10-digit phone number.</p>}
+              <label htmlFor="phone" className="block text-gray-700 mb-1">phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="your phone number" value={phone} onChange={(e) => setPhone(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isPhoneValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 `} />
+              {!isPhoneValid && <p className="text-red-500 text-sm">please enter a valid 10-digit phone number.</p>}
             </div>
 
             <div>
-              <label htmlFor="instagram" className="block text-gray-700">Instagram ID</label>
-              <input type="text" id="instagram" name="instagram" placeholder="Your Instagram ID" required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 placeholder-gray-500" />
+              <label htmlFor="instagram" className="block text-gray-700">instagram account</label>
+              <input type="text" id="instagram" name="instagram" placeholder="your instagram" required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 " />
             </div>
 
             <div>
-              <label htmlFor="vices" className="block text-gray-700">Vices (eg: alcohol, binging, retail therapy, addiction and etc)</label>
-              <input type="text" id="vices" name="vices" placeholder="Enter other vices" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700" />
+              <label htmlFor="vices" className="block text-gray-700">vices (eg: alcohol, binging, retail therapy, addiction and etc)</label>
+              <input type="text" id="vices" name="vices" placeholder="enter your vices" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700" />
             </div>
 
             <div>
-              <label htmlFor="goals" className="block text-gray-700">Goals (eg: learn backflip, build abs, build an app, create a song, write something..etc)</label>
-              <textarea id="goals" name="goals" placeholder="Enter your other goals here" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 placeholder-gray-500"></textarea>
+              <label htmlFor="goals" className="block text-gray-700">goals (eg: learn backflip, build abs, build an app, create a song, write something..etc)</label>
+              <textarea id="goals" name="goals" placeholder="enter your goals here" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700"></textarea>
             </div>
 
             <button type="button" onClick={handleFormSubmit} className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 font-semibold text-lg transition duration-300 transform hover:scale-105">
-              Register
+              register
             </button>
           </form>
         </div>
 
         <div className="mt-8 text-center">
-          <p className="text-gray-700">Join the {counter} people who have already registered!</p>
+          <p className="text-gray-700">join the {counter} people who have already registered!</p>
         </div>
       </div>
     </div>
