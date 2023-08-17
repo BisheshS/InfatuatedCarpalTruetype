@@ -1,0 +1,84 @@
+/* tailwind.css */
+
+/* Add a futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a90e2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Style for the form container */
+.custom-form {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form headings */
+.custom-form h1,
+.custom-form h2 {
+  color: #4a90e2;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Style for the input fields */
+.custom-input {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  transition: border-color 0.3s;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Style for the error messages */
+.error-message {
+  color: #e53e3e;
+  font-size: 14px;
+}
+
+/* Style for the submit button */
+.custom-button {
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-family: 'Space Mono', monospace;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: #3577c6;
+  transform: scale(1.05);
+}
+
+.custom-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.5);
+}
+
+/* Style for the counter message */
+.counter-message {
+  color: #718096;
+  font-size: 16px;
+}
+
+/* Style for the background */
+.bg-futuristic {
+  background: linear-gradient(135deg, #4a90e2, #1a202c);
+}
