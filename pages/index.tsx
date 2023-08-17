@@ -47,14 +47,14 @@ const Home: NextPage = () => {
   return (
     <div className="bg-gray-100">
       <div className="container mx-auto p-8">
-        <h1 className="text-3xl font-semibold mb-4 transition duration-300 transform hover:scale-105 hover:text-blue-500">
-          thirty days no vices challenge
+        <h1 className="text-3xl font-semibold mb-4 transition duration-300 transform hover:scale-105">
+          thirty days no vices challenge <a target="_blank" href='https://www.instagram.com/faatakameezz/' className="hover:text-blue-500  text-lg font-normal">by faatakameezz</a>
         </h1>
 
         <div className="mb-8">
           <h2 className="text-lg font-semibold mb-2">about</h2>
           <p className="text-gray-700">
-            embark on a journey of self-discovery and growth<br></br>join our 30-day challenge designed to help you know yourself better and become independent of your vices. First cohort was a great success, will update the stats here
+            embark on a journey of self-discovery and growth. join our 30-day challenge designed to help you know yourself better and become independent of your vices. First cohort was a great success, will update the stats here
           </p>
         </div>
 
@@ -78,34 +78,34 @@ const Home: NextPage = () => {
           <form id="registration-form" action="https://submit-form.com/81BG540J" className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-gray-700 mb-1">name</label>
-              <input type="text" id="name" name="name" placeholder="your name" value={name} onChange={(e) => setName(e.target.value)} required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 " />
+              <input type="text" id="name" name="name" placeholder="Joe Smith" value={name} onChange={(e) => setName(e.target.value)} required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 " />
             </div>
 
             <div>
               <label htmlFor="email" className="block text-gray-700 mb-1">email</label>
-              <input type="email" id="email" name="email" placeholder="your email" value={email} onChange={(e) => setEmail(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isEmailValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 `} />
+              <input type="email" id="email" name="email" placeholder="joesmith@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isEmailValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 `} />
               {!isEmailValid && <p className="text-red-500 text-sm">please enter a valid email address.</p>}
             </div>
 
             <div>
               <label htmlFor="phone" className="block text-gray-700 mb-1">phone number</label>
-              <input type="tel" id="phone" name="phone" placeholder="your phone number" value={phone} onChange={(e) => setPhone(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isPhoneValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 `} />
+              <input type="tel" id="phone" name="phone" placeholder="9000000001" value={phone} onChange={(e) => setPhone(e.target.value)} required className={`w-full px-4 py-2 rounded-md border ${isPhoneValid ? 'border-gray-300' : 'border-red-500'} focus:outline-none focus:border-blue-500 text-gray-700 `} />
               {!isPhoneValid && <p className="text-red-500 text-sm">please enter a valid 10-digit phone number.</p>}
             </div>
 
             <div>
               <label htmlFor="instagram" className="block text-gray-700">instagram account</label>
-              <input type="text" id="instagram" name="instagram" placeholder="your instagram" required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 " />
+              <input type="text" id="instagram" name="instagram" placeholder="@faatakameezz" required className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700 " />
             </div>
 
             <div>
-              <label htmlFor="vices" className="block text-gray-700">vices (eg: alcohol, binging, retail therapy, addiction and etc)</label>
-              <input type="text" id="vices" name="vices" placeholder="enter your vices" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700" />
+              <label htmlFor="vices" className="block text-gray-700">vices</label>
+              <input type="text" id="vices" name="vices" placeholder="(eg: alcohol, binging, retail therapy, addiction, etc)" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700" />
             </div>
 
             <div>
-              <label htmlFor="goals" className="block text-gray-700">goals (eg: learn backflip, build abs, build an app, create a song, write something..etc)</label>
-              <textarea id="goals" name="goals" placeholder="enter your goals here" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700"></textarea>
+              <label htmlFor="goals" className="block text-gray-700">goals</label>
+              <textarea id="goals" name="goals" placeholder="(eg: 100 daily pushups, build abs, build an app, create a song, write your own..etc)" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-700"></textarea>
             </div>
 
             <button type="button" onClick={handleFormSubmit} className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 font-semibold text-lg transition duration-300 transform hover:scale-105">
