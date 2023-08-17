@@ -48,7 +48,7 @@ const Home: NextPage = () => {
     <div className="bg-gray-100">
       <div className="container mx-auto p-8">
         <h1 className="text-3xl font-semibold mb-4 transition duration-300 transform hover:scale-105">
-          thirty days no vices challenge <a target="_blank" href='https://www.instagram.com/faatakameezz/' className="hover:text-blue-500  text-lg font-normal">by faatakameezz</a>
+          thirty days no vices challenge <a target="_blank" href='https://www.instagram.com/faatakameezz/' rel="noreferrer" className="hover:text-blue-500  text-lg font-normal">by faatakameezz</a>
         </h1>
 
         <div className="mb-8">
